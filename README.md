@@ -18,7 +18,7 @@ ssh-keygen -f ssh-key
 ##### deploy the module :
 ```hcl
 module "custom-image" {
-  source = "hamdiz0/hz-ami-gen/azure"
+  source  = "hamdiz0/hz-vm-image/azure"
 
   public_ssh_key_path  = "./key-pair/ssh-key.pub"
   private_ssh_key_path = "./key-pair/ssh-key"
